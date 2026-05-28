@@ -1107,47 +1107,51 @@ const BAIRRO_ALIASES = {
 // ══════════════════════════════════════════════════════════════
 const CARDAPIO = {
   'Porções': [
-    { nome: 'Contra filé, acebolado, Batata Frita',       tamanhos: { P: 48.00, M: 57.50, G: 68.70 } },
-    { nome: 'Costelinha Suína, c/ Batata Frita',          tamanhos: { P: 46.00, M: 59.50, G: 66.00 } },
-    { nome: 'Frango a Passarinho, c/ Batata Frita',       tamanhos: { P: 39.00, M: 54.50, G: 62.00 } },
-    { nome: 'Isca de Frango, Batata Frita',               tamanhos: { P: 36.00, M: 46.90, G: 58.30 } },
-    { nome: 'Calabresa, acebolada / Batata Frita',        tamanhos: { P: 29.00, M: 39.90, G: 44.50 } },
-    { nome: 'Batata Frita',                               tamanhos: { P: 20.50, M: 26.90, G: 35.50 } },
+    { nome: 'Contra filé, acebolado, Batata Frita',     tamanhos: { P: 48.00, M: 57.50, G: 68.70 } },
+    { nome: 'Costelinha Suína, c/ Batata Frita',        tamanhos: { P: 46.00, M: 59.50, G: 66.00 } },
+    { nome: 'Costelinha Suína, c/ Mandioca',            tamanhos: { P: 46.00, M: 59.50, G: 66.00 } },
+    { nome: 'Frango a Passarinho, c/ Batata Frita',     tamanhos: { P: 39.00, M: 54.50, G: 62.00 } },
+    { nome: 'Isca de Frango, Batata Frita',             tamanhos: { P: 36.00, M: 46.90, G: 58.30 } },
+    { nome: 'Tulipa, com Mandioca Frita',               tamanhos: { P: 45.00, M: 57.90, G: 64.90 } },
+    { nome: 'Calabresa, acebolada / Batata Frita',      tamanhos: { P: 29.00, M: 39.90, G: 44.50 } },
+    { nome: 'Batata Frita',                             tamanhos: { P: 20.50, M: 26.90, G: 35.50 } },
     { nome: 'Batata Frita / bacon / cheddar / Calabresa', tamanhos: { P: 39.00, M: 49.90, G: 58.00 } },
-    { nome: 'Mandioca Frita',                             tamanhos: { P: 26.00, M: 38.60, G: 48.00 } },
-    { nome: 'Isca de Tilápia',                            tamanhos: { P: 42.00, M: 53.50 } },
-    { nome: 'Tilápia Assada (pedido antecipado)',          tamanhos: { M: 51.00, G: 63.60 } },
+    { nome: 'Mandioca Frita',                           tamanhos: { P: 26.00, M: 38.60, G: 48.00 } },
+    { nome: 'Isca de Tilápia',                          tamanhos: { P: 42.00, M: 53.50 } },
+    { nome: 'Tilápia Assada (pedido antecipado)',        tamanhos: { M: 51.00, G: 63.60 } },
   ],
 
   'Especiais': [
+    // Itens movidos das Porções conforme solicitação
+    // Barcas grandes
     {
       nome: 'Barca Especial do Alquimia — contra filé acebolado, costelinha suína, tulipa, calabresa, isca de peixe, batata frita, mandioca, azeitonas e pimenta biquinho',
       preco: 130.00
     },
+    {
+      nome: 'Barca de Frios — muçarela, presunto, mortadela, salsicha, salame, azeitonas',
+      preco: 110.00
+    },
   ],
 
-  'Caldos': [
-    { nome: 'Caldo de Mocotó',                                     preco: 32.00 },
-    { nome: 'Caldo de Feijão com Bacon',                           preco: 29.50 },
-    { nome: 'Caldo de Vaca Atolada',                               preco: 32.00 },
-    { nome: 'Caldo Verde',                                         preco: 30.00 },
-    { nome: 'Caldo de Mandioca / Bacon / Calabresa',               preco: 32.00 },
-    { nome: 'Caldo de Quenga',                                     preco: 32.00 },
-    { nome: 'Moela ao Molho',                                      preco: 34.00 },
-    { nome: 'Caldo de Mandioquinha',                               preco: 30.00 },
-    { nome: 'Caldo de Peixe',                                      preco: 34.00 },
-    { nome: 'Caldo de Periquete (Abóbora, Requeijão e Mussarela)', preco: 34.00 },
-    { nome: 'Caldo de Abóbora com Carne Seca',                     preco: 34.00 },
-    { nome: 'Caldo de Legumes com Cubos de Carne',                 preco: 34.00 },
-    { nome: 'Caranguejos',                                         preco: 0, obs: 'Consulte o valor' },
+  'Caldos (750ml)': [
+    { nome: 'Caldo de Mocotó',                           preco: 29.00 },
+    { nome: 'Caldo de Feijão com Bacon',                 preco: 28.30 },
+    { nome: 'Caldo de Vaca Atolada',                     preco: 32.00 },
+    { nome: 'Caldo Verde',                               preco: 27.60 },
+    { nome: 'Caldo de Mandioca / Bacon / Calabresa',     preco: 29.00 },
+    { nome: 'Caldo de Quenga',                           preco: 29.50 },
+    { nome: 'Caldo de Peixe',                            preco: 26.00 },
+    { nome: 'Caldo de Piriguete (Abóbora, Requeijão e Mussarela)', preco: 34.00 },
+    { nome: 'Caldo de Abóbora com Carne Seca',           preco: 34.00 },
   ],
 
   'Bebidas': [
-    { nome: 'Sucos Naturais',   preco: 0, obs: 'Consulte disponibilidade' },
-    { nome: 'Sucos Lata',       preco: 0, obs: 'Consulte valor' },
-    { nome: 'Refrigerantes',    preco: 0, obs: 'Consulte valor' },
-    { nome: 'Cervejas',         preco: 0, obs: 'Consulte valor' },
-    { nome: 'Vinho',            preco: 0, obs: 'Consulte valor' },
+    { nome: 'Sucos Naturais',       preco: 0,    obs: 'Consulte disponibilidade' },
+    { nome: 'Sucos Lata',           preco: 0,    obs: 'Consulte valor' },
+    { nome: 'Refrigerantes',        preco: 0,    obs: 'Consulte valor' },
+    { nome: 'Cervejas',             preco: 0,    obs: 'Consulte valor' },
+    { nome: 'Vinho',                preco: 0,    obs: 'Consulte valor' },
   ],
 };
 
